@@ -29,8 +29,8 @@ const contaHoras = setInterval(function() {
     }
 
     // if (distanciaAteAniversario >= 90) {
-    //     Element.innerHTML = `${diasRestantes}d ${horasRestantes}h`;
+    //     .innerHTML = `${diasRestantes}d ${horasRestantes}h`;
     // } else {
-    //     Element.innerHTML = "O tempo restante é menor que 3 meses";
+    //     .innerHTML = "O tempo restante é menor que 3 meses";
     // }
 }, 1000);
