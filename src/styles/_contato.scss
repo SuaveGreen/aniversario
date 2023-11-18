@@ -1,0 +1,73 @@
+@use 'variables';
+
+.contact {
+    padding: 100px 0;
+
+    &__title {
+        border-top: 1px solid ;
+        padding: 24px 0;
+        font-size: 24px;
+        font-weight: bold;
+        color: variables.$secondaryTextColor;
+
+    }
+
+    &__text {
+        padding: 0 0 32px;
+
+        &__description {
+            list-style: circle;
+            margin-left: 16px;
+            color: variables.$secondaryTextColor;
+
+            &__here {
+                color: variables.$blue;
+            }
+        }
+    }
+
+    &__form {
+        
+        &__input {
+            padding-bottom: 24px;
+
+            input {
+                margin-right: 24px;
+                padding: 8px;
+                height: 24px;
+                width: 120px;
+                border-radius: 8px;
+                color: variables.$secondaryTextColor;
+                background-color: transparent;
+                border-color: variables.$buttonColor;
+                border-style: solid;
+            }
+
+            a {
+                font-size: 16px;
+                border-radius: 8px;
+                padding: 8px;
+                text-decoration: none;
+                transition: all ease .3s;
+                border: 2px solid variables.$buttonColor;
+                transition: all ease .3s;
+                
+                &:hover {
+                    color: variables.$secondaryTextColor;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        &__span {
+            font-size: 36px;
+            line-height: 56px;
+            font-weight: 500;
+            
+            span {
+                color: variables.$secondaryTextColor;
+            }
+        }
+    }
+}
+

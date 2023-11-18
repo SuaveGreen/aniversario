@@ -1,0 +1,68 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+
+    &--festaFamilia {
+        background-image: linear-gradient(variables.$pink, variables.$blue);
+    }
+
+    &--pulaPula {
+        background-image: linear-gradient(variables.$blue, variables.$cian);
+    }
+    
+    &--buffet {
+        background-image: linear-gradient(variables.$cian, variables.$green);
+    }
+    
+    &--danca {
+        background-image: linear-gradient(variables.$green, variables.$gray);
+    }
+
+    &--contact {
+        background-image: linear-gradient(variables.$gray, variables.$withe);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        gap: 40px;
+        display: flex;
+    }
+
+    &__image {
+        max-width: 360px;
+    }
+
+    &__detail {
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+        
+        &__image {
+            width: 100%;
+        }
+
+        &__detail {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="https://clipart.coolclips.com/480/vectors/tf05185/CoolClips_vc016097.png" alt="EBAC">
+            <p class="hero__text">
+                O maior evento do Brasil (Meu aniversário) começa em: <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Local da festa:</b>
+                        Rua qualquer - Cidade - SP
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Ingresso:</b>
+                        1 kg de alimento não perecivel
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando:</b>
+                        11/04/2024 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Lista de presentes (Opcional)
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="event event--festaFamilia ">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Festa para toda a família</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe maiores repellat, laborum adipisci veritatis sunt quidem sed ex, assumenda architecto eligendi nisi iure voluptates tempora rem excepturi? Eligendi, distinctio?
+                </p>
+            </div>
+            <img class="event__image" src="https://s3.amazonaws.com/playkids-blog-assets/wp-content/uploads/2019/09/16175354/festa-de-aniversario-simples.jpg" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--pulaPula event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Pula-Pula e muito mais</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe maiores repellat, laborum adipisci veritatis sunt quidem sed ex, assumenda architecto eligendi nisi iure voluptates tempora rem excepturi? Eligendi, distinctio?
+                </p>
+            </div>
+            <img class="event__image" src="https://bora.ai/a/files/bsb/impulso_arenageral.jpg" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--buffet">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Buffet a vontade</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe maiores repellat, laborum adipisci veritatis sunt quidem sed ex, assumenda architecto eligendi nisi iure voluptates tempora rem excepturi? Eligendi, distinctio?
+                </p>
+            </div>
+            <img class="event__image" src="https://paulinelligastronomia.com.br/wp-content/uploads/2018/07/comida-norte-americana-festa-de-aniversario-tematica-buffet-paulinelli-600x400.jpg" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--danca event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">E uma pista de dança</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe maiores repellat, laborum adipisci veritatis sunt quidem sed ex, assumenda architecto eligendi nisi iure voluptates tempora rem excepturi? Eligendi, distinctio?
+                </p>
+            </div>
+            <img class="event__image" src="https://img.elo7.com.br/product/zoom/2972900/pista-de-danca-em-lona-15-anos-debutante-3x3m-formatura-faculdade.jpg" alt="Front-End">
+        </div>
+    </section>
+
+    <section class="contact event--contact">
+        <div class="container">
+            <h2 class="contact__title">Contrate o serviço:</h2>
+            <div class="contact__text">
+                <ul>
+                    <li class="contact__text__description">
+                        Caso queira contratar os serviços, entre em contato clicando <a href="#" class="contact__text__description__here">aqui</a>.
+                    </li>
+                </ul>
+                <ul>
+                    <li class="contact__text__description">
+                        OBS: o serviço devera ser contratado 3 meses antes da data.
+                    </li>
+                </ul>
+                <ul>
+                    <li class="contact__text__description">
+                        Para conferir, coloque a data nos campos abaixo!
+                    </li>
+                </ul>
+            </div>
+            <div class="contact__form">
+                <div class="container">
+                    <form class="contact__form__input">
+                        <input type="date" id="dia" name="dia">
+                        <a href="#" class="button-calcular button--primary">
+                            Confirmar
+                        </a>
+                    </form>
+                </div>
+                <p class="contact__form__span">
+                    <span class="data_aniversario">
+                        < tag span >
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
