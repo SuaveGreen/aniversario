@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Verifica se a diferença é inferior a 3 meses
         if (monthsDifference < 3 & days >= 2 ) {
-            spanMessage.textContent = `Faltam: ${days}d. A data é menor que 3 meses!`;
+            spanMessage.textContent = `Restam ${days} dias. A data é menor que 3 meses!`;
         } else if (days < 1) {
             spanMessage.textContent = `É necessário que a data tenha mais que 3 meses!`;
         } else {
-            spanMessage.textContent = `Faltam: ${monthsDifference}m. É possível contratar o serviço!`;
+            spanMessage.textContent = `${monthsDifference} meses até o aniversário. É possível contratar o serviço!`;
         }
     });
 }, 1000);
