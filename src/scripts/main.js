@@ -49,8 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // Converte a diferença para meses
         const monthsDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 30.44));
 
+        // Converte a diferença para dias
         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
+        // Calculo para pegar apenas os dias restantes
         // const daysDifference = timeDifference / (1000 * 60 * 60 * 24 / (30.44));
 
 
