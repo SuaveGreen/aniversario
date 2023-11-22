@@ -1,6 +1,6 @@
 AOS.init();
 
-const dataDoEvento = new Date("apr 10, 2024 23:59:59");
+const dataDoEvento = new Date("apr 11, 2024 00:00:00");
 const timeStampDoEvento = dataDoEvento.getTime();
 
 const contaHoras = setInterval(function() {
@@ -50,19 +50,19 @@ document.addEventListener("DOMContentLoaded", function () {
         const monthsDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 30.44));
 
         // Converte a diferença para dias
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
         // Calculo para pegar apenas os dias restantes
-        // const daysDifference = timeDifference / (1000 * 60 * 60 * 24 / (30.44));
+        const remainingDays = Math.floor(daysDifference % 30.44);
 
 
         // Verifica se a diferença é inferior a 3 meses
-        if (monthsDifference < 3 & days >= 2 ) {
-            spanMessage.textContent = `Restam ${days} dias. A data é menor que 3 meses!`;
-        } else if (days < 1) {
+        if (monthsDifference < 3 && daysDifference >= 2) {
+            spanMessage.textContent = `Restam ${daysDifference} dias. A data é menor que 3 meses!`;
+        } else if (daysDifference < 1) {
             spanMessage.textContent = `É necessário que a data tenha mais que 3 meses!`;
         } else {
-            spanMessage.textContent = `${monthsDifference} meses até o aniversário. É possível contratar o serviço!`;
+            spanMessage.textContent = `Restam ${monthsDifference} meses e ${remainingDays} dias até o aniversário. É possível contratar o serviço!`;
         }
     });
 }, 1000);
